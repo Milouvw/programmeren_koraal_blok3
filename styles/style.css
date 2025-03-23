@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('../img/zwembadachtergond.png');
+    background-size: 1700px;
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+h1 {
+    font-size: 45px;
+    color: cadetblue;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.omschrijvingspel {
+    font-size: 20px;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+#zwembad {
+    position: relative;
+    max-width: 1030px;
+    height: 350px;
+    background: url('../img/zwembadmetfinish.png');
+    background-size: cover;
+    border-width: 1em;
+    border-style: solid;
+    border-color: whitesmoke;
+    margin: 120px auto 2em;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+#klikbutton, #restartbutton:hover {
+    background-color: rgb(62, 142, 65);
+}
+
+
+#klikbutton {
+    font-size: 18px;
+    cursor: pointer;
+    background-color: lightblue;
+    box-shadow: rgb(153, 153, 153) 0px 9px;
+    border-radius: 0.7em;
+    padding: 1.5em;
+}
+
+#restartbutton {
+    background-color: cadetblue;
+    display: flex;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: rgb(153, 153, 153) 0px 9px;
+    border-radius: 0.7em;
+    margin: 40px auto auto;
+    padding: 1em;
+}
+
+button:disabled {
+    color: grey;
+    border-color: lightgray
+}
+
+
+
+#spelendezwemmer {
+    top: 35px;
+}
+
+#tegenstander1bot {
+    top: 150px;
+}
+
+#tegenstander2bot {
+    top: 255px;
+}
+
+#bericht {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#spelendezwemmer, #tegenstander1bot, #tegenstander2bot {
+    position: absolute;
+    left: 0px;
+    width: 50px;
+    height: 30px;
+    font-size: 30px;
+    transition: left 0.1s linear;
+}
+
+
+
+
+
+
+
+
+/* Timer Overlay */
+#countdown-voorgrond {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+    font-weight: bold;
+    display: none; /* Standaard verbergen */
+}
+
+/* Start knop */
+#startRace {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startRace:hover {
+    background-color: #e64a19;
+}

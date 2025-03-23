@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZwemRace</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="index.js" defer></script>
+</head>
+
+<body>
+
+    <h1>Kliksnelheid Zwemrace</h1>
+    <p class="omschrijvingspel">Klik zo snel mogelijk om de andere zwemmers voor te blijven. Hoe sneller je klikt, hoe sneller je gaat!</p>
+    <p>jij bent zwemmer:</p>
+    <img src="img/blauwezwemmer.png" alt="spelendezwemmer">
+
+    <div id="zwembad">
+        <div id="spelendezwemmer">
+            <img src="img/blauwezwemmer.png" alt="spelendezwemmer">
+        </div>
+        <div id="tegenstander1bot">
+            <img src="img/gelezwemmer.png" alt="bot1">
+        </div>
+        <p id="bericht"></p>
+        <div id="tegenstander2bot">
+            <img src="img/paarsezwemmer.png" alt="bot2">
+        </div>
+    </div>
+
+    <!-- Timer Overlay -->
+    <div id="countdown-voorgrond">
+        <div id="countdown-text">3</div>
+    </div>
+
+    <!-- Race Start Knop -->
+    <button id="startRace">Start Race</button>
+
+
+
+    
+    <button id="klikbutton">Klik hier om te zwemmen!</button>
+    <button id="restartbutton">Restart Game</button>
+
+</body>
+
+</html>
