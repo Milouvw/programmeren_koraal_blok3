@@ -28,9 +28,12 @@ function startCountdown() {
 
     let countdownNumbers = ["3", "2", "1", "GO!"]; // De countdown-timer zelf
     let index = 0; // Index om door de array te lopen. 0 start de "3"
+    let countdownGeluid = document.getElementById("CountdownAudio"); // hier haal ik de audio op uit de html pagina
 
     let interval = setInterval(function () {
         countdownText.textContent = countdownNumbers[index]; // Toont de juiste waarde
+        countdownGeluid.play(); // "play" is een htmlmediaElement. Deze heb ik gevonden op "MDN Web Docs" Hierbij is er alleen het element "play".
+        // Er zijn hierbij geen parameters, na een let gemaakt te hebben van de audio in de html speel ik die hier af
 
         if (index === countdownNumbers.length - 1) {
             clearInterval(interval); // Stopt de countdown
